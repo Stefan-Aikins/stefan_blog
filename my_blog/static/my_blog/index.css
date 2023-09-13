@@ -1,0 +1,34 @@
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-weight: 700;
+}
+
+
+.main-nav__sections {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.main-nav__sections ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-nav__sections ul li {
+    margin-left: 2rem;
+}
+
+.main-nav__sections img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.main-nav__sections a {
+    color: #071952
+}
