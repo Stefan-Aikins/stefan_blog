@@ -1,0 +1,17 @@
+{% load static %}
+
+{% comment %} styling the navigation menu {% endcomment %}
+<header>
+    <nav id="main-nav">
+        <div class="main-nav__sections"><a href="{% url "home-page"%}"><img src="{% static 'my_blog/images/prof_p-circular.png' %}" alt="stefan's logo">
+            </a></div>
+
+        <div class="main-nav__sections">
+            <ul>
+                <li class="nav-item"><a href="{% url "home-page"%}">Home</a></li>
+                <li class="nav-item"><a href="{% url "general-page"%}">General</a></li>
+                <li class="nav-item"><a href="{% url "more-info-page"%}">More Info</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
