@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 /* font family for all pages */
 html {
     font-family: 'Lato', sans-serif;
@@ -7,6 +9,8 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -15,4 +19,14 @@ li {
 
 a {
     text-decoration: none;
+}
+
+@media(min-width:28rem) {
+    body {
+        min-width: 25rem;
+
+    }
+
+
+
 }

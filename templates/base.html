@@ -1,24 +1,17 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Page Title{% endblock %}</title>
-        {% comment %} <link rel="stylesheet" href="{% static 'app.css' %}">  {% endcomment %}
+        <link rel="stylesheet" href="{% static 'app.css' %}">
+        <link rel="shortcut icon" href="{% static 'my_blog/images/my_pp/favicon.ico' %}">
         {% block css_files %}{% endblock %}
     </head>
     <body>
-        {% comment %} styling the navigation menu {% endcomment %}
-        <header>
-            <nav>
-                <ul>
-                    <li><a><img src=""></a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">General</a></li>
-                    <li><a href="">More Info</a></li>
-                </ul>
-            </nav>
-        </header>
+
         {% block content %}
         main-page
         {% endblock %}

@@ -3,8 +3,35 @@
 
 {% block css_files %}
 <link rel="stylesheet" href="{% static "my_blog/index.css" %}">
+<link rel="stylesheet" href="{% static "my_blog/contact.css" %}">
 {% endblock %}
 
 {% block content %}
 {% include "my_blog/includes/header.html" %}
-{% endblock %}
+
+
+<div><h2 class="contact-heading">Contact Me</h2></div>
+
+<form action= "" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    <div class="the-form">
+    {% for field in form %}
+            {{field.firstname.label_tag}}
+            {{field.firstname}}
+    
+            {{field.lastname.label_tag}}
+            {{field.lastname}}
+        
+            {{field.message.label_tag}}
+            {{field.message}}
+        
+            {{field.file.label_tag}}
+            {{field.file}}
+    {% endfor %}
+        <button type="submit">send</button>
+    </div>
+</form>
+
+{% include "my_blog/includes/footer.html" %}
+{%endblock%}

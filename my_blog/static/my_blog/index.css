@@ -1,11 +1,14 @@
-#main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-weight: 700;
+.solid-outline {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border: 0.2px solid gray
 }
 
+.solid-image {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 4px;
+    border: 0.2px solid gray
+}
 
 .main-nav__sections {
     display: flex;
@@ -24,11 +27,157 @@
     margin-left: 2rem;
 }
 
+.main-nav__sections a:hover,
+.main-nav__sections a:active {
+    color: #E5F9DB;
+    font-weight: 700;
+}
+
+
 .main-nav__sections img {
     width: 4rem;
     height: 4rem;
+    margin: 1rem;
 }
 
 .main-nav__sections a {
     color: #071952
+}
+
+.ATF-hero1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrip {
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.ATF-hero1 div {
+    max-width: 20rem;
+
+}
+
+
+.CTA-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+
+.CTA-btns a {
+    color: white;
+}
+
+.CTA-btns div p {
+    color: #071952;
+}
+
+.CTA-btns h4 {
+    margin: 2rem;
+    padding: 0.9rem;
+    border-radius: 9px;
+    color: white;
+    font-weight: 700;
+    background-color: #004225;
+}
+
+/* 662549 */
+.blog_hero1,
+.BTF_sect img {
+    width: 20rem;
+    height: 15rem;
+}
+
+/* align text with the image below the fold */
+.BTF_sect {
+    max-width: 20rem;
+    /* border: 1px solid #071952; */
+}
+
+.blog_hero3 {
+    width: 40rem;
+    height: 30rem;
+}
+
+.lgt-footer {
+    font-weight: 400;
+}
+
+/* body {
+    background-color: #D8D9DA;
+} */
+
+/* Responsive design */
+@media(min-width:30rem) {
+
+    .ATF {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .BTF-sect,
+    .ATF-hero3 {
+        margin: 2rem
+    }
+
+    #main-nav,
+    #BTF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 700;
+    }
+
+    .CTF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .CTF-box img {
+        width: 40rem;
+        height: 12rem;
+    }
+
+
+    @media(min-width:55rem) {
+        .ATF {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #main-nav,
+        #BTF {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            font-weight: 700;
+        }
+
+        #BTF {
+            margin-top: 8rem;
+        }
+
+        .CTF {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 3rem 2rem;
+        }
+
+    }
+
 }

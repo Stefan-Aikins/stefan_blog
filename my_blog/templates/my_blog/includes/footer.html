@@ -1,0 +1,18 @@
+{% load static %}
+
+<header>
+    <nav id="main-nav" class="solid-outline" style="padding:2rem; margin-top:2rem;">
+        <div><h4 class="lgt-footer"> © 2023 Developed By Stefan Asiedu Aikins (kofiStackz)</h4></div>
+
+        <div class="main-nav__sections">
+            <ul>
+                <li class="nav-item lgt-footer"><a href="{% url "home-page"%}">Home</a></li>
+                <li class="nav-item lgt-footer"><a href="{% url "about-page"%}">About</a></li>
+                <li class="nav-item lgt-footer"><a href="{% url "news-page"%}">News</a></li>
+                <li class="nav-item lgt-footer"><a href="{% url "trending-page"%}">Trending</a></li>
+                <li class="nav-item lgt-footer"><a href="{% url "places-page"%}">Places</a></li>
+                <li class="nav-item lgt-footer"><a href="{% url "contact-page"%}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

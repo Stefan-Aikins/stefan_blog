@@ -1,12 +1,98 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Stefan Aikins{% endblock %}
 
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'my_blog/index.css' %}">
+{% endblock %}
+
 {% block content %}
+
+{% include "my_blog/includes/header.html" %}
+
+{% comment %} Above the fold layout {% endcomment %}
+<section class="ATF">
+    <div class="ATF-hero1">
+        <a href="{% url "trending-page"%}"><img src="{% static 'my_blog/images/blog_hero1.webp' %}" alt="blog image" class="blog_hero1 solid-image"></a>
+        <div class="CTA-btns">
+            <h4><a href="https://github.com/Stefan-Aikins">my github</a></h4>
+            <h4><a href="https://www.linkedin.com/in/stefan-asiedu-aikins/">linkedIn</a></h4>
+        </div>
+        {% comment %} the ATF text {% endcomment %}
+        <div class="ATF-hero1__face">
+            <p class="solid-outline descrip"> You are destined to to live long and realise you dreams. 
+                Stay focused, work hard, work smart and pursue you goals. 
+                Be humble, respect people and cooperate with your team 
+            </p>
+        </div>
+    </div>
+    <div class="ATF-hero3">
+        <img src="{% static 'my_blog/images/blog_hero3.jpeg' %}" alt="blog hero image" class="blog_hero3 solid-image">
+    </div>
+</section>
+
+<section id="BTF">
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/kakum_nat_park2.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/jw.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/london_Eye.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+</section>
+
+<section id="BTF">
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/kakum_nat_park2.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/jw.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+
+    <div class="BTF_sect">
+        <img src="{% static 'my_blog/images/london_Eye.jpeg' %}" class="solid-image">
+        <p class="descrip solid-outline"> You are destined to to live long and realise you dreams. 
+            Stay focused, work hard, work smart and pursue you goals. 
+            Be humble, respect people and cooperate with your team 
+        </p>
+    </div>
+</section>
+
+<section class="CTF">
+    <div class="CTF-box solid-image"><img src="{% static 'my_blog/images/football_1.jpeg' %}"></div>
+    <div class="CTF-box solid-image"><img src="{% static 'my_blog/images/athletics_1.jpeg' %}"></div>
+</section>
     
 {% endblock %}
 
    
 {% block footer %}
-    
+{% include "my_blog/includes/footer.html" %}
+
 {% endblock %}
